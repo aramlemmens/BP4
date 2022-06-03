@@ -12,26 +12,26 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="@string/textview_chosegamemode"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton"
+      app:layout_constraintBottom_toTopOf="@+id/imageButton_alleen"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintLeft_toLeftOf="parent"
       android:textColor="@color/white"/>
 
   <ImageButton
-      android:id="@+id/imageButton"
+      android:id="@+id/imageButton_alleen"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:background="#00FFFFFF"
       android:gravity="center"
       android:src="@drawable/alleenv2"
-      app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+      app:layout_constraintBottom_toTopOf="@+id/imageButton2_samen"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
   <ImageButton
-      android:id="@+id/imageButton2"
+      android:id="@+id/imageButton2_samen"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:background="#00FFFFFF"
@@ -40,5 +40,5 @@
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+      app:layout_constraintTop_toBottomOf="@+id/imageButton_alleen" />
 </androidx.constraintlayout.widget.ConstraintLayout>
