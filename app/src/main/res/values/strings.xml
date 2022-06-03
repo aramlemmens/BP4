@@ -11,4 +11,6 @@
     <string name="textview_start">Start een spel</string>
     <string name="textview_history">Score geschiedenis</string>
     <string name="textview_account">Persoonlijk account</string>
+    <string name="textview_chosegamemode">Wilt u alleen of met anderen spelen?</string>
+
 </resources>
