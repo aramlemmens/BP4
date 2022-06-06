@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Prototype bp4</string>
-    <string name="textview_welkom">Hallo nieuwe gebruiken Voordat je kan beginnen met de app gebruiken moeten wij eerst een naam hebben om jou te noemen.</string>
+    <string name="textview_welkom">Hallo nieuwe gebruiken, Voordat je kan beginnen met de app gebruiken moeten wij eerst een naam hebben om jou te noemen.</string>
     <string name="textview_name">Vul hier je gebruikersnaam in.</string>
     <string name="edittext_name">Gebruikersnaam</string>
     <string name="textview_weight">Vul hier je gewicht in.</string>
     <string name="edittext_weight">Gewicht</string>
-    <string name="textview_argument">Vul hier jouw rede in voor waarom jij deze app gedownload hebt. *</string>
+    <string name="textview_argument">Vul hier in waarom jij deze app gedownload hebt. *</string>
     <string name="edittext_argument">Argument</string>
     <string name="textview_note">* Hoeft niet ingevult worden.</string>
     <string name="textview_start">Start een spel</string>

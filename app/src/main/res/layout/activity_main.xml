@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textview_welkom"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,18 +31,18 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="40dp" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textview_name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:textColor="@color/white"
-        />
+<!--    <TextView-->
+<!--        android:id="@+id/textView9"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/textview_name"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView"-->
+<!--        android:textColor="@color/white"-->
+<!--        />-->
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
@@ -51,27 +51,28 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/textview_name"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName7"
         app:layout_constraintEnd_toEndOf="parent"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
         android:textColor="@color/black"
         android:background="@color/white"
+        android:shape="ring"
         />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textview_weight"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center"
-        android:textColor="@color/white"
-        />
+<!--    <TextView-->
+<!--        android:id="@+id/textView10"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/textview_weight"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName7"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        />-->
 
     <EditText
         android:id="@+id/editTextTextPersonName7"
@@ -80,8 +81,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/textview_weight"
-        app:layout_constraintBottom_toTopOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName8"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:gravity="center"
@@ -89,33 +90,35 @@
         android:background="@color/white"
         />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textview_argument"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center"
-        android:textColor="@color/white"
-        />
+<!--    <TextView-->
+<!--        android:id="@+id/textView11"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/textview_argument"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName8"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        />-->
 
     <EditText
         android:id="@+id/editTextTextPersonName8"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/textview_argument"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:gravity="center"
         android:textColor="@color/black"
         android:background="@color/white"
+        android:maxLines="4"
+        android:lines="4"
         />
 
     <TextView
