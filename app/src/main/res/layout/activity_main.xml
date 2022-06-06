@@ -50,13 +50,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/edittext_name"
+        android:hint="@string/textview_name"
         app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:background="@color/white"
         />
 
     <TextView
@@ -78,13 +79,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/edittext_weight"
+        android:hint="@string/textview_weight"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:gravity="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:background="@color/white"
         />
 
     <TextView
@@ -106,13 +108,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/edittext_argument"
+        android:hint="@string/textview_argument"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:gravity="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:background="@color/white"
         />
 
     <TextView
