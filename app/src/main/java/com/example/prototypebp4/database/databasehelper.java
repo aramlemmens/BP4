@@ -9,7 +9,7 @@ import com.example.prototypebp4.database.DataTables.*;
 public class databasehelper extends SQLiteOpenHelper{
 
     public static final int DATABASE_VERSION = 1;
-    public static final String DATABASE_NAME = "MovieData.db";
+    public static final String DATABASE_NAME = "Data.db";
 
     public static final String SQL_CREATE_GEBRUIKERS = "create table " + Gebruikers.TABLE_NAME + " (" +
             Gebruikers.COLUMN_NAME_GEBRUIKER + " text primary key)";
@@ -51,7 +51,7 @@ public class databasehelper extends SQLiteOpenHelper{
 
     public static final String SQL_CREATE_GebruikerGamemodeGeslachtReactievermogenRestultaat = "create table " + GebruikerGamemodeGeslachtReactievermogenRestultaat.TABLE_NAME + " (" +
             GebruikerGamemodeGeslachtReactievermogenRestultaat.COLUMN_NAME_GEBRUIKER + " text," +
-            GebruikerGamemodeGeslachtReactievermogenRestultaat.COLUMN_NAME_GAMEMODES + " text primary key)," +
+            GebruikerGamemodeGeslachtReactievermogenRestultaat.COLUMN_NAME_GAMEMODES + " text primary key," +
             GebruikerGamemodeGeslachtReactievermogenRestultaat.COLUMN_NAME_SCORE + " integer," +
             GebruikerGamemodeGeslachtReactievermogenRestultaat.COLUMN_NAME_REACTIEVERMOGEN + " text," +
             GebruikerGamemodeGeslachtReactievermogenRestultaat.COLUMN_NAME_RESULTAAT + " integer, " +

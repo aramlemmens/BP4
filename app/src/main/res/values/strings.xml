@@ -5,12 +5,14 @@
     <string name="edittext_name">Gebruikersnaam</string>
     <string name="textview_weight">Vul hier je gewicht in.</string>
     <string name="edittext_weight">Gewicht</string>
-    <string name="textview_argument">Vul hier in waarom jij deze app gedownload hebt. *</string>
+    <string name="textview_argument">Vul hier in waarom jij deze app gedownload hebt.*</string>
     <string name="edittext_argument">Argument</string>
     <string name="textview_note">* Hoeft niet ingevult worden.</string>
     <string name="textview_start">Start een spel</string>
     <string name="textview_history">Score geschiedenis</string>
     <string name="textview_account">Persoonlijk account</string>
     <string name="textview_chosegamemode">Wilt u alleen of met anderen spelen?</string>
+    <string name="textview_Score">Score</string>
+
 
 </resources>

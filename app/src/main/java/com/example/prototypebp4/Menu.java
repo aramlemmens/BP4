@@ -28,7 +28,7 @@ public class Menu extends AppCompatActivity {
         toscorehistory.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent i = new Intent(v.getContext(), GameStart.class);
+                Intent i = new Intent(v.getContext(), Score.class);
                 startActivity(i);
             }
         });
@@ -37,7 +37,7 @@ public class Menu extends AppCompatActivity {
         topersonelaccount.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent i = new Intent(v.getContext(), GameStart.class);
+                Intent i = new Intent(v.getContext(), Account.class);
                 startActivity(i);
             }
         });
