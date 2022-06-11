@@ -1,10 +1,10 @@
 package com.example.prototypebp4;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.prototypebp4.database.databasehelper;
 
@@ -17,11 +17,10 @@ public class Account extends AppCompatActivity {
 
         databasehelper dbHelper = new databasehelper(this);
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        String sql = "select f._id, f.titel, f.jaar, f.regisseur, r.naam, r.geboortedatum, " +
-                "f.categorie, c.omschrijving catomschrijving, f.genre, g.omschrijving genomschrijving " +
-                "from films f join regisseurs r on (f.regisseur = r._id) " +
-                "join categorieen c on (f.categorie = c._id) " +
-                "join genres g on (f.genre = g._id)";
+        String sql = "select * from gebruikergewichtgeslachtargument";
+
+        Cursor cur_account = db.rawQuery(sql,null);
+        System.out.println(sql);
 
     }
 }

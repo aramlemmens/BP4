@@ -5,19 +5,13 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.prototypebp4.database.DataTables;
 import com.example.prototypebp4.database.databasehelper;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private databasehelper dbHelper = new databasehelper(this);
@@ -46,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
             Cursor cur_idn = db.rawQuery(sqln, null);
             ContentValues valuesname = new ContentValues();
+            ContentValues values = new ContentValues();
+
+
             valuesname.put(DataTables.Gebruikers.COLUMN_NAME_GEBRUIKER, newGebruiker);
             long resultn = db.insert(DataTables.Gebruikers.TABLE_NAME, null,valuesname);
             inputname.setText("");
@@ -62,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
             long resulta = db.insert(DataTables.Argumenten.TABLE_NAME, null,valuearg);
             inputargument.setText("");
 
+            ContentValues value = new ContentValues();
+            value.put(DataTables.GebruikerGewichtGeslachtArgument.COLUMN_NAME_GEBRUIKER, newGebruiker);
+            value.put(DataTables.GebruikerGewichtGeslachtArgument.COLUMN_NAME_GEWICHT, newGewicht);
+            value.put(DataTables.GebruikerGewichtGeslachtArgument.COLUMN_NAME_ARGUMENT, newargument);
+
+            db.insert(DataTables.GebruikerGewichtGeslachtArgument.TABLE_NAME,null,value);
 
             Intent i = new Intent(v.getContext(), Menu.class);
             startActivity(i);

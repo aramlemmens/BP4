@@ -53,7 +53,7 @@ public class DataTables {
     }
 
     public static class GebruikerGewichtGeslachtArgument implements BaseColumns {
-        public static final String TABLE_NAME = "gebruikergewichtagumentargument";
+        public static final String TABLE_NAME = "gebruikergewichtgeslachtargument";
         public static final String COLUMN_NAME_GEBRUIKER = "gebruiker";
         public static final String COLUMN_NAME_GEWICHT = "gewicht";
         public static final String COLUMN_NAME_GESLACHT = "geslacht";
