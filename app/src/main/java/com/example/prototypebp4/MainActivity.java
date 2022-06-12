@@ -51,13 +51,11 @@ public class MainActivity extends AppCompatActivity {
             ContentValues valuesweight = new ContentValues();
             valuesweight.put(DataTables.Gewichten.COLUMN_NAME_GEWICHT, Integer.parseInt(newGewicht));
             long resultw = db.insert(DataTables.Gewichten.TABLE_NAME, null,valuesweight);
-            inputweight.setText("");
 
             Cursor cur_ida = db.rawQuery(sqla, null);
             ContentValues valuearg = new ContentValues();
             valuearg.put(DataTables.Argumenten.COLUMN_NAME_ARGUMENT, newargument);
             long resulta = db.insert(DataTables.Argumenten.TABLE_NAME, null,valuearg);
-            inputargument.setText("");
 
             ContentValues value = new ContentValues();
             value.put(DataTables.GebruikerGewichtGeslachtArgument.COLUMN_NAME_GEBRUIKER, newGebruiker);
@@ -65,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
             value.put(DataTables.GebruikerGewichtGeslachtArgument.COLUMN_NAME_ARGUMENT, newargument);
 
             db.insert(DataTables.GebruikerGewichtGeslachtArgument.TABLE_NAME,null,value);
+            inputname.setText("");
+            inputweight.setText("");
+            inputargument.setText("");
+
 
             Intent i = new Intent(v.getContext(), Menu.class);
             startActivity(i);
