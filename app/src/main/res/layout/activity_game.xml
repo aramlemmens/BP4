@@ -11,7 +11,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
+        android:textSize="32dp"
         android:textAllCaps="true"
         android:text="@string/textview_Score"
         android:textColor="@color/white"
@@ -26,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textSize="24dp"
         android:textColor="@color/black"
         android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/textView9"
@@ -40,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textSize="24dp"
         android:textColor="@color/black"
         android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/textView10"
@@ -53,6 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textSize="24dp"
         android:textColor="@color/black"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,4 +63,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
