@@ -1,22 +1,21 @@
 package com.example.prototypebp4;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.example.prototypebp4.model.scorehistory_model;
+import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.Timer;
+import com.example.prototypebp4.model.account_model;
+import com.example.prototypebp4.model.scorehistory_model;
 
 public class Game extends AppCompatActivity {
 
     scorehistory_model sh_m = new scorehistory_model();
+    account_model a_m = new account_model();
 
     public int counter = 0;
     public int score = 0;
@@ -30,6 +29,13 @@ public class Game extends AppCompatActivity {
 
         final TextView counttime=findViewById(R.id.textView8);
         final TextView reactievermogentext = findViewById(R.id.textView10);
+        Spinner spinnerlevels=findViewById(R.id.spinner);
+
+        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this, R.array.levels, android.R.layout.simple_spinner_item);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+
+        spinnerlevels.setAdapter(adapter);
 
         new CountDownTimer(100000,100) {
             @Override
@@ -48,7 +54,7 @@ public class Game extends AppCompatActivity {
             public void onFinish() {
                 counttime.setText("Finished");
                 sh_m.setScore(score);
-                sh_m.setGebruiker(g);
+                sh_m.setGebruiker(a_m.getGebruiker());
                 sh_m.setReactievermogen(rv);
             }
         }.start();

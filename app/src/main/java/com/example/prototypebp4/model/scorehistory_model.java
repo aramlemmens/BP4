@@ -3,7 +3,7 @@ package com.example.prototypebp4.model;
 public class scorehistory_model {
     private String gebruiker;
     private int score;
-    private String Reactievermogen;
+    private int Reactievermogen;
 
     public String getGebruiker() {
         return gebruiker;
@@ -21,11 +21,11 @@ public class scorehistory_model {
         this.score = score;
     }
 
-    public String getReactievermogen() {
+    public int getReactievermogen() {
         return Reactievermogen;
     }
 
-    public void setReactievermogen(String reactievermogen) {
+    public void setReactievermogen(int reactievermogen) {
         Reactievermogen = reactievermogen;
     }
 }
