@@ -28,8 +28,11 @@ public class MainActivity extends AppCompatActivity {
             EditText inputargument = findViewById(R.id.editTextTextPersonName8);
 
             String newGebruiker = inputname.getText().toString();
-            String newGewicht = inputweight.getText().toString();
+            int newGewicht = Integer.parseInt(inputweight.getText().toString());
             String newargument = inputargument.getText().toString();
+            if(newGebruiker.equals("")){
+                newGebruiker = "placement";
+            }
 
 
             SQLiteDatabase db = dbHelper.getReadableDatabase();
@@ -49,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
             Cursor cur_idw = db.rawQuery(sqlw, null);
             ContentValues valuesweight = new ContentValues();
-            valuesweight.put(DataTables.Gewichten.COLUMN_NAME_GEWICHT, Integer.parseInt(newGewicht));
+            valuesweight.put(DataTables.Gewichten.COLUMN_NAME_GEWICHT, newGewicht);
             long resultw = db.insert(DataTables.Gewichten.TABLE_NAME, null,valuesweight);
 
             Cursor cur_ida = db.rawQuery(sqla, null);

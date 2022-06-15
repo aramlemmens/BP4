@@ -12,7 +12,17 @@
     <string name="textview_history">Score geschiedenis</string>
     <string name="textview_account">Persoonlijk account</string>
     <string name="textview_chosegamemode">Wilt u alleen of met anderen spelen?</string>
+    <string name="textview_chooselevel">choose level you have finish on</string>
     <string name="textview_Score">Score</string>
+    <string name="textview_End">Druk hier als je klaar bent</string>
+    <string name="textview_Finish">Finish</string>
+
+    <string name="textview_statuitleg">Druk hier als je wilt beginnen</string>
+    <string name="textview_startbtn">Start</string>
+    <string name="Resultaat">Resultaat</string>
+    <string name="Geslacht">Geslacht</string>
+
+
     <string-array name="levels">
         <item>level 1</item>
         <item>level 2</item>

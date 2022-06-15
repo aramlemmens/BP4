@@ -1,12 +1,11 @@
 package com.example.prototypebp4;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Menu extends AppCompatActivity {
 
@@ -19,7 +18,7 @@ public class Menu extends AppCompatActivity {
         togamestart.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent i = new Intent(v.getContext(), GameStart.class);
+                Intent i = new Intent(v.getContext(), Game.class);
                 startActivity(i);
             }
         });
